@@ -1,0 +1,44 @@
+/* Navbar Styles */
+.ftco_navbar {
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ftco_navbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff !important;
+    letter-spacing: 2px;
+}
+
+.ftco_navbar .navbar-nav .nav-link {
+    color: #fff !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.ftco_navbar .navbar-nav .nav-link:hover {
+    color: #00d4ff !important;
+}
+
+.ftco_navbar .navbar-nav .nav-link.active {
+    color: #00d4ff !important;
+    border-bottom: 2px solid #00d4ff;
+}
+
+.ftco_navbar .navbar-toggler {
+    border-color: #fff;
+}
+
+.ftco_navbar .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.ftco_navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M5 8h22M5 16h22M5 24h22'/%3E%3C/svg%3E");
+}
