@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sitemaps',
     'apps',
 ]
 
@@ -117,3 +118,4 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / "static"]  # agar project darajasida static papka bo‘lsa
+STATIC_ROOT = BASE_DIR / "staticfiles"  # production uchun static fayllarni yig‘ish joyi

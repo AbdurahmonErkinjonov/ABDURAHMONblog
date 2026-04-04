@@ -16,10 +16,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from apps.views import home_page, contact_view
+from django.views.generic import TemplateView
+from django.contrib.sitemaps.views import sitemap
+from apps.views import home_page, contact_view, StaticSitemap
+
+sitemaps = {
+    'static': StaticSitemap,
+}
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", home_page, name="home"),
     path('contact/', contact_view, name='contact'),
+    path('googlef883503f1944b88a.html', TemplateView.as_view(template_name='googlef883503f1944b88a.html', content_type='text/html')),
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
+    path('robots.txt', TemplateView.as_view(template_name="robots.txt", content_type="text/plain")),
 ]
